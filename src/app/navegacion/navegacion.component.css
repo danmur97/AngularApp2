@@ -1,0 +1,11 @@
+nav {
+    background-color: #cecece;
+    color: gray;
+    height: 50px;
+}
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 10px;
+    float: right;
+}
