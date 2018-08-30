@@ -8,21 +8,26 @@ import { NavegacionComponent } from './navegacion/navegacion.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { ListaEventosComponent } from './lista-eventos/lista-eventos.component';
-
+import { EventoService } from './evento.service';
+import { Evento } from './models/evento';
+import { DetalleEventoComponent } from './detalle-evento/detalle-evento.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     NavegacionComponent,
-    ListaEventosComponent
+    ListaEventosComponent,
+    DetalleEventoComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule
   ],
-  providers: [],
+  providers: [
+    EventoService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
